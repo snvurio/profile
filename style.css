@@ -1,0 +1,276 @@
+body {
+  background-image: url(https://t3.ftcdn.net/jpg/07/52/70/74/360_F_752707422_6wyWHXR0SRmVyvmR2NCObNTW7RbCmSKq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Do Hyeon", serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow-y: scroll;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: hotpink;
+}
+
+.project {
+  padding: 50px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.project ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project li {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.project a {
+  color: hotpink;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  padding: 50px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contact a {
+  color: hotpink;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  text-shadow: 0 0 10px black;
+  color: white;
+  font-size: 80px;
+  margin-top: 100px;
+  animation: fadeIn 4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  padding: 50px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sns img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sns img:hover {
+  transform: scale(1.3);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px black;
+  text-align: center;
+}
+
+span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sns-content p {
+  font-size: 20px;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 60px;
+  }
+
+  section {
+    padding: 30px 10px;
+    max-width: 90%;
+  }
+
+  .sns img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sns-content p {
+    font-size: 18px;
+  }
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  display: none;
+  font-size: 18px;
+}
+
+#back-to-top:hover {
+  background-color: hotpink;
+}
+section,
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://t3.ftcdn.net/jpg/07/52/70/74/360_F_752707422_6wyWHXR0SRmVyvmR2NCObNTW7RbCmSKq.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.about-me,
+.portfolio,
+.contact {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: hotpink;
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sns img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sns img:hover {
+  transform: scale(1.3);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+}
